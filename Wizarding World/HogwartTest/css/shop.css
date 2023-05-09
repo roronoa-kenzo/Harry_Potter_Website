@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+body{
+    background-color: rgb(3, 2, 41);
+}
+
+h1{
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    height: 10%;
+}
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(255, 255, 255);
+    margin-top: 2%;
+    height: 10%;
+}
+
+h2{
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    height: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    transition: 1s;
+    color:rgb(255, 205, 162);
+}
+
+.btn-parallax:hover{
+    transition: 1s;
+    background-color: rgb(39, 0, 39);
+}
+
+.btn-choixpeau:hover{
+    transition: 1s;
+    background-color: rgb(39, 0, 39);
+}
+
+.img-article:hover{
+    filter: brightness(40%);
+    transition: 1s;
+}
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100px;
+}
+
+.bouh{
+    height: 75%;
+    padding-left: 5%;
+}
+
+.logo{
+    height: 100%;
+}
+
+.bouh2{
+    margin-top: 6%;
+}
+
+  li{
+    font-size: medium;
+  }
+
+  .navbar {
+      display:flex;
+      padding-right: 40px;
+      padding-left: 25x;
+  }
+
+  .nav-menu{
+    padding-bottom: 65px;
+}
+
+  header{
+    height: 14%;
+  }
+   
+  header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      padding-top: 5px;
+      margin-right: 22px;
+      background-color: #150038;
+  }
+  
+  header ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  header ul li {
+      margin-left: 2rem;  
+      list-style: none; 
+      font-family: 'Montserrat'; 
+      line-height: 28px; 
+      text-align: center; 
+      letter-spacing: 0.2px;
+      margin-left: 4rem;
+      font-size: 15px;
+  }  
+  
+  header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  } 
+  
+  .head-container {
+      margin: auto;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+
+
+
+/*----------------------------------------CARD-------------------------------------------*/
+
+.shop-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    margin-bottom: 30%;
+}
+
+.container-card {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+
+.container-card .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: rgb(1 0 20);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-card .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(137 103 74);
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container-card .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container-card .card:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: 'Montserrat';
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container-card .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.container-card .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.container-card .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 270px;
+}
+
+.container-card .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+    font-family: 'Montserrat';
+}
+
+.container-card .card:hover .contentBx {
+    height: 210px;
+}
+
+.container-card .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container-card .card .contentBx .size,
+.container-card .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-card .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.container-card .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.container-card .card .contentBx .size h3,
+.container-card .card .contentBx .color h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container-card .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-card .card .contentBx .size span:hover {  /* other bug */
+    background: #B90000;
+}
+
+.container-card .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container-card .card .contentBx .color span:nth-child(2) {
+     background: #1BBFE9;
+}
+
+.container-card .card .contentBx .color span:nth-child(3) {
+     background: #1B2FE9;
+}
+
+.container-card .card .contentBx .color span:nth-child(4) {
+     background: #080481;
+}
+
+.container-card .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.container-card .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+} 

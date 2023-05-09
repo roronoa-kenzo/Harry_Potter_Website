@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+body{
+    background-color: rgb(3, 2, 41);
+}
+
+h1{
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    height: 10%;
+}
+
+
+
+h2{
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    height: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    transition: 1s;
+    color:rgb(255, 205, 162);
+}
+
+.btn-parallax:hover{
+    transition: 1s;
+    background-color: rgb(39, 0, 39);
+}
+
+.btn-choixpeau:hover{
+    transition: 1s;
+    background-color: rgb(39, 0, 39);
+}
+
+.img-article:not(:hover){
+    transition:2s;
+}
+
+.img-article:hover{
+    filter: brightness(40%);
+    transition: 1s;
+}
+
+
+/*-----------------------------NAVBAR--------------------------------------------------------------*/
+
+.container{
+    width: 100%;
+    height: 100px;
+}
+
+.bouh{
+    height: 75%;
+    padding-left: 5%;
+}
+
+
+.bouh2{
+    margin-top: 6%;
+}
+
+  li{
+    font-size: medium;
+  }
+
+  .navbar {
+      display:flex;
+      padding-right: 40px;
+      padding-left: 25x;
+  }
+
+  header{
+    height: 14%;
+  }
+   
+  header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      padding-top: 5px;
+      margin-right: 22px;
+      background-color: #150038;
+  }
+  
+  header ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  header ul li {
+      margin-left: 2rem;  
+      list-style: none; 
+      font-family: 'Montserrat'; 
+      line-height: 28px; 
+      text-align: center; 
+      letter-spacing: 0.2px;
+      margin-left: 4rem;
+      font-size: 15px;
+  }  
+  
+  header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  } 
+  
+  .head-container {
+      margin: auto;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+
+/*-----------------------------NAVBAR------------------------------------------------------------*/
+
+/*-----------------------------ARTICLE----------------------------------------------------------------*/
+
+.actu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;   
+    color:rgb(255, 255, 255);
+    margin-top: 2%;
+    height: 90%;
+    position: relative;
+}
+
+.img-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(255, 255, 255);
+    width: 90%;
+    margin-left: 5%;
+}
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(255, 255, 255);
+    margin-top: 2%;
+    height: 10%;
+}
+
+.titre-article{
+    position: absolute;
+    color:rgb(137, 103, 74);
+    font-family: 'Montserrat';
+    top: 500px;
+    left: 16%;
+    font-size: 30px;
+}
+
+.titre-article:hover{
+    overflow: visible;
+    transition: 2s;
+}
+
+.p-article:hover{
+    overflow: visible;
+    transition: 2s;
+}
+
+.p-article{
+    overflow: hidden;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 550px;
+    left: 16%;
+    font-size: 21px;
+    max-width: 40%;
+}
+
+/*-------------------------------------------ARTICLE----------------------------------------------*/
+/*-------------------------------------------PARALLAX---------------------------------------------*/
+.parallax{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(137 103 74);
+    background-image: url("/HogwartTest/img/poudlard.jpg");
+    height: 80%;
+    background-attachment: fixed;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titre-parallax{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    font-size: 20px;
+    
+}
+
+.btn-parallax {
+    height: 15%;
+    background-color: #4c006d;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat';
+    border: 0;
+}
+
+/* ----------------------------------------------------test.html----------------------------- */
+
+/*----------------------------------------------------House----------------------------------*/
+
+.house-doc{
+    display: flex;
+    height: 20%;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+
+
+
+.slyterin-doc img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.slyterin-doc:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+
+
+.gryffindor-doc img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.gryffindor-doc:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+
+
+.ravenclaw-doc img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.ravenclaw-doc:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+
+
+.hufflepuff-doc img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.hufflepuff-doc:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+/*----------------------------------------------------House----------------------------------*/
+
+/*-------------------------------------------------Autre------------------------------------*/
+
+.choixpeau{
+    display: flex;
+    height: 60%;
+    margin-top: 10%;
+}
+
+.choixpeau-expli{
+    color: white;
+    font-size: 14px;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-choixpeau {
+    height: 6%;
+    background-color: #4c006d;
+    color: white;
+    padding: 14px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat';
+    border: 0;
+    margin-top: 7%;
+}
+
+/*-------------------------------------------------Autre------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------Shop---------------------------------------*/
+
